@@ -22,7 +22,6 @@ export default () => {
         },
         1000:{
           items:2,
-          nav:true,
           loop:true,
           center: true,
           autoWidth: true,
