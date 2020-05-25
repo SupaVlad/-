@@ -2,41 +2,70 @@ extends /layout/app
 
 block content
   .container
-    div.seo-section
-        div.seo-section__left-side
-        div.seo-section__right-side
-            span About SEO agency
-            h1 Our SEO marketing team integrates strategy
-            p We’re on a mission to start a conversation with your customers in this fast connected world.
-            p.seo-section__right-side--text-small Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            a Learn more
-    div.seo-text-section
-        div.seo-text-section__left-side
-            span We’re Offering
-            h1 SEO Services with talent specialist & Digital business
-        div.seo-text-section__right-side
-            a See More Services
-    div.seo-cards-section
-        div.seo-cards-section__left-side
-            div.seo-cards-section__card
-                div.seo-cards-section__card--img
-                div.seo-cards-section__card--title Content Marketing
-                div.seo-cards-section__card--text
-                    | We craft great content that keep your users interested and coming back for more. I have mixed feelings about the explosion of web content.
-        div.seo-cards-section__center-side
-            div.seo-cards-section__card
-                div.seo-cards-section__card--top-img
-                div.seo-cards-section__card--title Link Building
-                div.seo-cards-section__card--text
-                    | Links are still a powerful ranking factor in SEO. However, acquiring the wrong links could lead to a Google Penalty.
-            div.seo-cards-section__card
-                div.seo-cards-section__card--bot-img
-                div.seo-cards-section__card--title SEO & Social media
-                div.seo-cards-section__card--text
-                    | Your data tells a story that we need to understand. We’ve built a proprietary report that pulls important SEO data from Google Search Console
-        div.seo-cards-section__right-side
-            div.seo-cards-section__card
-                div.seo-cards-section__card--img
-                div.seo-cards-section__card--title AdWords & PPC
-                div.seo-cards-section__card--text
-                    | Is your Google AdWords budget disappearing without sales or calls? Or are you new to pay per click advertising, PPC?
+    div.preview
+        div.preview__img
+        div.preview__content
+            h1 Барселона — обзор города
+            p Барселона с её золотистыми пляжами, архитектурными шедеврами Гауди, многочисленными фестивалями и гастрономическим разнообразием понравилась мне в первый же день пребывания и стала местом, в котором...
+            a Читать дальше
+    div.carousel
+        div.carousel__content
+            h1 Отзывы о Барселоне
+            div.carousel__wrapper.owl-carousel.owl-theme
+
+                div.carousel__inner
+                    div.carousel__inner-header
+                        h1 Лена Одинцова
+                    div.carousel__inner-content
+                        h1
+                            span Барселона
+                            | — О городе:
+                        p Барселона - моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть ...
+                    div.carousel__inner-gallery.popup-gallery
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
+                    div.carousel__inner-footer
+                        span около 1 года назад
+                        span.carousel__inner-footer--dot .
+                        span 9 комментариев
+                        span.carousel__inner-footer--like 9
+                div.carousel__inner
+                    div.carousel__inner-header
+                        h1 Elena Bulgakova
+                    div.carousel__inner-content
+                        h1
+                            span Барселона
+                            | — О городе:
+                        p Плюсы города: весь город одни плюсы! Минусы города: не видела. В наш марофон по Европе не вписалось 2 испанских города от усталости - решили остаток путешествия провести в Браселоне ...
+                    div.carousel__inner-gallery.popup-gallery-thecond
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
+                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
+                    div.carousel__inner-footer
+                        span 5 месяцев назад
+                        span.carousel__inner-footer--dot .
+                        span 3 комментария
+                        span.carousel__inner-footer--like 7
+                - for(var x = 0; x < 15; x++)
+                    div.carousel__inner
+                        div.carousel__inner-header
+                            h1 Наталия Полянская
+                        div.carousel__inner-content
+                            h1
+                                span Барселона
+                                | — О городе:
+                            p Плюсы города: весь город одни плюсы! Минусы города: не видела. В наш марофон по Европе не вписалось 2 испанских города от усталости - решили остаток путешествия провести в Браселоне ...
+                        div.carousel__inner-gallery.popup-gallery-third
+                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
+                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
+                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
+                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
+                        div.carousel__inner-footer
+                            span около 1 года назад
+                            span.carousel__inner-footer--dot .
+                            span 9 комментариев
+                            span.carousel__inner-footer--like 9
+            a Все отзывы

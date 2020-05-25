@@ -1,263 +1,261 @@
-.content
-  flex-grow: 1
-  flex-shrink: 0
-  flex-basis: auto
-
-.container
-  padding: 0 0
-
-.seo-section
+.preview
   display: flex
-  padding: 264px 0
-  background-image: url("/images/bg-content.png")
-  background-position: left
-  background-position-x: -240px
-  background-position-y: 123px
+  padding-top: 109px
+  min-width: 879px
+  @media only screen and (max-width: 980px)
+    position: relative
+    display: block
+    min-width: 700px
+  @media only screen and (max-width: 980px)
+    min-width: 500px
+  @media only screen and (max-width: 650px)
+    min-width: 250px
+  @media only screen and (max-width: 465px)
+    min-width: 150px
+.preview__img
+  min-width: 440px
+  min-height: 440px
+  background-image: url("/images/Barselona.png")
+  background-size: cover
+  @media only screen and (max-width: 1200px)
+    min-width: 340px
+    min-height: 340px
+  @media only screen and (max-width: 980px)
+    display: block
+    background-position: center
+  @media only screen and (max-width: 650px)
+    min-width: 140px
+    min-height: 140px
 
-.seo-section__left-side
-  width: 50%
+.preview__content
+  width: 100%
+  background-color: white
+  @media only screen and (max-width: 980px)
+    padding-bottom: 20px
 
-.seo-section__right-side
-  padding-left: 20px
-.seo-section__right-side span
-  color: #ff5a71
-  font-family: Overpass
-  font-size: 22px
-  font-weight: 700
-  line-height: 62px
+.preview__content h1
+  margin-top: 104px
+  margin-bottom: 19px
+  margin-left: 29px
+  font-family: KievitproRegular
+  font-weight: bold
+  font-size: 29px
+  line-height: 35px
+  letter-spacing: 0.03em
+  color: #000000
+  @media only screen and (max-width: 1200px)
+    margin-top: 49px
+  @media only screen and (max-width: 980px)
+    margin-top: 0
+    padding-top: 19px
 
-.seo-section__right-side h1
-  max-width: 572px
-  padding-bottom: 35px
-  color: #282828
-  font-family: Nunito
-  font-size: 50px
-  font-weight: 700
-  line-height: 55px
+.preview__content p
+  max-width: 373px
+  margin-left: 29px
+  margin-bottom: 6px
+  font-family: KievitproRegular
+  font-size: 17px
+  line-height: 25px
+  color: #000000
 
-.seo-section__right-side--text-small
-  opacity: 0.8
-  color: #282828
-  font-family: Overpass
-  font-size: 16px
-  font-weight: 400
-  line-height: 28px
+.preview__content a
+  margin-left: 29px
+  font-family: KievitproRegular
+  font-size: 17px
+  line-height: 25px
+  color: #000000
+  text-decoration: none
 
-.seo-section__right-side a
-  display: block
-  width: 214px
-  height: 60px
-  padding: 16px 54px
-  background-color: #ff646a
-  background-image: linear-gradient(-56deg, #ff5a71 0%, #ff9669 100%)
-  color: #ffffff
-  font-family: Overpass
-  font-size: 20px
-  font-weight: 400
-  line-height: 30px
+.preview__content a:hover
+  border-bottom: 3px solid #FF4641
   cursor: pointer
-  &:hover
-    border: 1px solid #f2f2f2
-    background-color: #ff3b69
-    color: white
 
-.seo-section__right-side p
-  padding-bottom: 29px
-  max-width: 459px
-  opacity: 0.8
-  color: #282828
-  font-family: Overpass
-  font-size: 22px
-  font-weight: 400
-  line-height: 30px
+.carousel
+  padding: 0 31px
+  margin-top: -13px
+  min-width: 884px
+  background-color: #FFFFFF
+  @media only screen and (max-width: 980px)
+    min-width: 380px
+  @media only screen and (max-width: 600px)
+    min-width: 245px
 
-p.seo-section__right-side--text-small
-  max-width: 444px
-  padding-bottom: 45px
-  opacity: 0.8
-  color: #282828
-  font-family: Overpass
-  font-size: 16px
-  font-weight: 400
-  line-height: 28px
+.carousel__content h1
+  margin-top: 35px
+  margin-bottom: 21px
+  padding-top: 35px
+  font-family: KievitproRegular
+  font-size: 29px
+  font-weight: bold
+  line-height: 35px
+  letter-spacing: 0.03em
+  color: #000000
 
-.seo-text-section
-  display: flex
-  padding-top: 12px
+.carousel__inner
+  display: inline-block
+  min-width: 300px
+  padding-left: 19px
+  max-width: 300px
+  background: #F9F7F2
 
-.seo-text-section__left-side
-  max-width: 70%
-  padding-left: 376px
-
-.seo-text-section__right-side
-  width: 30%
-  padding-top: 68px
-  padding-left: 206px
-
-.seo-text-section__left-side span
-  color: #ff5a71
-  font-family: Overpass
-  font-size: 22px
-  font-weight: 700
-  line-height: 62px
-
-.seo-text-section__left-side h1
-  max-width: 750px
-  color: #282828
-  font-family: "Nunito"
-  font-size: 45px
-  font-weight: 400
-  line-height: 55px
-
-.seo-text-section__right-side a
+.carousel__inner-header h1
   display: block
-  width: 216px
-  height: 60px
-  padding: 18px 23px
-  border: 1px solid #f2f2f2
-  color: #ff5a71
-  font-family: Overpass
-  font-size: 20px
-  font-weight: 400
+  padding-top: 0
+  margin-top: 33px
+  margin-left: 40px
+  font-family: KievitproRegular
+  font-size: 15px
+  line-height: 17px
+  color: #000000
+
+.carousel__inner-header h1:before
+  content: url("/images/oval.png")
+  position: absolute
+  left: 19px
+  top: 25px
+  width: 30px
+  height: 30px
+
+.carousel__inner-content h1
+  margin-top: 32px
+  margin-bottom: 10px
+  padding-top: 0
+  font-family: KievitproRegular
+  font-size: 13px
+  line-height: 17px
+  letter-spacing: 0.464286px
+  text-transform: uppercase
+  color: #212121
+
+.carousel__inner-content span
+  font-family: KievitproRegular
+  font-size: 13px
+  line-height: 17px
+  letter-spacing: 0.464286px
+  text-transform: uppercase
+  color: #FC4F1E
+
+.carousel__inner-content p
+  max-width: 243px
+  margin-bottom: 11px
+  font-family: RobotoRegular
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 25px
+  color: #000000
+
+.carousel__inner-gallery
+  display: flex
+
+.carousel__inner .carousel__inner-gallery a
+  margin: 0
+  padding: 0
+  margin-right: 5px
+  margin-top: 1px
+  border: none
+  font-size: inherit
+  line-height: inherit
+
+.carousel__inner-gallery--photo
+  position: relative
+  width: 50px
+  height: 50px
+  margin-right: 5px
   cursor: pointer
-  line-height: 30px
-  &:hover
-    border: 1px solid #f2f2f2
-    background-color: #ff3b69
-    color: white
 
-.seo-cards-section
-  display: flex
-  justify-content: center
-  padding-left: 100px
-  padding-top: 112px
-  padding-right: 50px
-  padding-bottom: 136px
-  background-image: url("/images/bg2.png")
-  background-position-x: 383px
-  background-position-y: -162px
+.carousel__inner-gallery--photo-one
+  background-image: url("/images/1.png")
 
-.seo-cards-section__center-side .seo-cards-section__card
+.carousel__inner-gallery--photo-two
+  background-image: url("/images/2.png")
+.carousel__inner-gallery--photo-three
+  background-image: url("/images/3.png")
+.carousel__inner-gallery--photo-four
+  background-image: url("/images/4.png")
+
+.carousel__inner-gallery--photo-four:after
+  content: "+7"
+  position: absolute
+  top: 15px
+  left: 15px
+  font-family: RobotoRegular
+  font-style: normal
+  font-weight: 500
+  font-size: 17px
+  line-height: 25px
+  color: #FFFFFF
+
+.carousel__inner-gallery--photo-four:before
+  content: ""
   display: block
+  height: 50px
+  width: 50px
+  background: rgba(16, 16, 16, 0.4)
 
-.seo-cards-section__left-side .seo-cards-section__card--img
-  display: block
-  position: relative
-  margin: 0 auto
-  width: 114px
-  height: 114px
-  border-radius: 50%
-  box-shadow: 0 16px 18px rgba(186, 186, 186, 0.35)
-  background-color: #ffffff
-  background-image: linear-gradient(-47deg, #fb1030 0%, #fd3abf 100%)
-  &:after
-    content: url("/images/analysis.png")
-    display: block
-    position: absolute
-    top: 29px
-    left: 25%
-    background-repeat: no-repeat
+.carousel__inner-footer
+  padding: 20px 0
 
-.seo-cards-section__card--title
-  padding-top: 32px
-  padding-bottom: 21px
-  color: #282828
-  font-family: "Nunito"
-  font-size: 26px
-  font-weight: 400
-  line-height: 38px
+.carousel__inner-footer span
+  display: inline-block
+  vertical-align: sub
+  font-family: RobotoRegular
+  font-style: normal
+  font-weight: normal
+  font-size: 11px
+  line-height: 25px
+  color: #9D9D9D
 
-.seo-cards-section__card--text
-  padding-bottom: 102px
-  max-width: 277px
-  opacity: 0.8
-  color: #282828
-  font-family: Overpass
-  font-size: 16px
-  font-weight: 400
-  line-height: 28px
+.carousel__inner-footer--dot
+  margin-left: 11px
+  margin-right: 5px
+  font-family: RobotoRegular
+  font-style: normal
+  font-weight: bold
+  font-size: 11px
+  line-height: 25px
+  color: #8F8F8E
 
-.seo-cards-section__card--top-img
-  display: block
-  position: relative
-  margin: 0 auto
-  width: 114px
-  height: 114px
-  border-radius: 50%
-  background-color: #f7f2ff
-  background-image: linear-gradient(-44deg, #ff5a71 0%, #ff9669 100%)
-  &:after
-    content: url("/images/cloud.png")
-    display: block
-    position: absolute
-    top: 22px
-    left: 25%
-    background-repeat: no-repeat
+.carousel__inner-footer--like
+  margin-left: 30px
 
-.seo-cards-section__card--bot-img
-  display: block
-  position: relative
-  margin: 0 auto
-  width: 114px
-  height: 114px
-  border-radius: 50%
-  background-color: #f7f2ff
-  background-image: linear-gradient(-44deg, #3dd6e0 0%, #4cf09d 100%)
-  &:after
-    content: url("/images/startup.png")
-    display: block
-    position: absolute
-    top: 22px
-    left: 25%
-    background-repeat: no-repeat
+.carousel__inner-footer--like:before
+  content: url("/images/like.png")
+  margin-right: 6px
+  vertical-align: inherit
+  height: 12px
+  width: 14px
 
-.seo-cards-section__right-side .seo-cards-section__card--img
-  display: block
-  position: relative
-  margin: 0 auto
-  width: 114px
-  height: 114px
-  border-radius: 50%
-  background-color: #f7f2ff
-  background-image: linear-gradient(-44deg, #4343ee 0%, #c453fe 100%)
-  &:after
-    content: url("/images/adwords.png")
-    display: block
-    position: absolute
-    top: 22px
-    left: 25%
-    background-repeat: no-repeat
+.owl-theme .owl-dots .owl-dot.active span
+  background: #FF4641 !important
+  width: 8px!important
+  height: 8px!important
 
-.seo-cards-section__card
-  padding-top: 57px
-  padding-left: 37px
-  padding-right: 54px
-  margin-bottom: 42px
-  text-align: center
-  box-shadow: 0 0 30px rgba(186, 184, 191, 0.35)
-  border-radius: 10px
-  background-color: #ffffff
+.owl-theme .owl-dots .owl-dot span
+  width: 4px!important
+  height: 4px!important
+  background: #212121!important
 
-.seo-cards-section__left-side
-  padding-top: 146px
-  margin-right: 30px
+.owl-theme .owl-dots .owl-dot
+  outline: none!important
+  vertical-align: middle
 
-.seo-cards-section__left-side .seo-cards-section__card--text
-  padding-bottom: 77px
+.owl-theme .owl-nav.disabled+.owl-dots
+  position: absolute
+  right: -5px
+  bottom: -60px
 
-.seo-cards-section__center-side
-  margin-right: 30px
+.carousel__content a
+  display: inline-block
+  margin-top: 28px
+  padding: 9px 22px
+  margin-bottom: 30px
+  border: 2px solid #FF4641
+  font-family: KievitproRegular
+  font-weight: bold
+  font-size: 15px
+  line-height: 17px
+  color: #212121
 
-.seo-cards-section__right-side
-  padding-top: 171px
-
-.seo-cards-section__left-side .seo-cards-section__card
-  padding-left: 39px
-  padding-right: 45px
-
-.seo-cards-section__center-side .seo-cards-section__card
-  padding-left: 46px
-
-.seo-cards-section__right-side .seo-cards-section__card--text
-  max-width: 286px
-  padding-bottom: 78px
+.carousel__content a:hover
+  cursor: pointer
