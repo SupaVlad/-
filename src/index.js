@@ -11,10 +11,6 @@ import './fonts';
 import initLayout from './layout';
 import initBlocks from './blocks';
 import initPages from './pages';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
-import 'magnific-popup';
-import 'magnific-popup/dist/jquery.magnific-popup.min';
 
 $(() => {
   initLayout();

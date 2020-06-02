@@ -2,70 +2,7 @@ extends /layout/app
 
 block content
   .container
-    div.preview
-        div.preview__img
-        div.preview__content
-            h1 Барселона — обзор города
-            p Барселона с её золотистыми пляжами, архитектурными шедеврами Гауди, многочисленными фестивалями и гастрономическим разнообразием понравилась мне в первый же день пребывания и стала местом, в котором...
-            a Читать дальше
-    div.carousel
-        div.carousel__content
-            h1 Отзывы о Барселоне
-            div.carousel__wrapper.owl-carousel.owl-theme
+      include tasks/index
 
-                div.carousel__inner
-                    div.carousel__inner-header
-                        h1 Лена Одинцова
-                    div.carousel__inner-content
-                        h1
-                            span Барселона
-                            | — О городе:
-                        p Барселона - моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть ...
-                    div.carousel__inner-gallery.popup-gallery
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
-                    div.carousel__inner-footer
-                        span около 1 года назад
-                        span.carousel__inner-footer--dot .
-                        span 9 комментариев
-                        span.carousel__inner-footer--like 9
-                div.carousel__inner
-                    div.carousel__inner-header
-                        h1 Elena Bulgakova
-                    div.carousel__inner-content
-                        h1
-                            span Барселона
-                            | — О городе:
-                        p Плюсы города: весь город одни плюсы! Минусы города: не видела. В наш марофон по Европе не вписалось 2 испанских города от усталости - решили остаток путешествия провести в Браселоне ...
-                    div.carousel__inner-gallery.popup-gallery-thecond
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
-                        a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
-                    div.carousel__inner-footer
-                        span 5 месяцев назад
-                        span.carousel__inner-footer--dot .
-                        span 3 комментария
-                        span.carousel__inner-footer--like 7
-                - for(var x = 0; x < 15; x++)
-                    div.carousel__inner
-                        div.carousel__inner-header
-                            h1 Наталия Полянская
-                        div.carousel__inner-content
-                            h1
-                                span Барселона
-                                | — О городе:
-                            p Плюсы города: весь город одни плюсы! Минусы города: не видела. В наш марофон по Европе не вписалось 2 испанских города от усталости - решили остаток путешествия провести в Браселоне ...
-                        div.carousel__inner-gallery.popup-gallery-third
-                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-one(href='/images/1.png')
-                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-two(href='/images/2.png')
-                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-three(href='/images/3.png')
-                            a.carousel__inner-gallery--photo.carousel__inner-gallery--photo-four(href='/images/4.png')
-                        div.carousel__inner-footer
-                            span около 1 года назад
-                            span.carousel__inner-footer--dot .
-                            span 9 комментариев
-                            span.carousel__inner-footer--like 9
-            a Все отзывы
+
+

@@ -1,0 +1,346 @@
+.header
+  min-height: 85px
+  padding-top: 31px
+
+.header__points-list
+  display: inline-block
+
+.header__points
+  vertical-align: middle
+  display: inline-block
+
+.header__profile
+  display: inline-block
+  position: absolute
+  right: 100px
+  top: 24px
+  vertical-align: middle
+
+.header
+  ul
+    display: block
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &:after
+      display: block
+      content: ' '
+      clear: both
+      float: none
+
+    &.menu > li
+      float: left
+      position: relative
+
+      > a
+        //display: block
+        padding: 10px
+        text-decoration: none
+
+        &:hover
+
+    &.submenu
+      position: absolute
+      min-width: 349px
+      height: 325px
+      padding: 18px 25px
+      top: 52px
+      right: -73px
+      overflow-y: scroll
+      background-color: white
+      border: 1px solid #CDD3DB
+      opacity: 0
+      visibility: hidden
+      transition-property: opacity, visibility
+      transition-duration: 0.2s
+      transition-delay: 0.15s
+
+      > li
+        display: block
+
+        > a
+          //display: block
+          font-family: 'Montserrat-Regular'
+          font-size: 14px
+          line-height: 18px
+          color: #212121
+          opacity: 0.5
+          text-decoration: none
+
+          &:hover
+            text-decoration: underline
+
+  ul.menu > li:hover > ul.submenu
+    width: max-content
+    opacity: 1
+    visibility: visible
+
+.header__logo
+  display: inline-block
+  margin-left: 83px
+  margin-right: 15px
+  vertical-align: middle
+  background-image: url("/images/logo.png")
+  width: 33.54px
+  height: 30px
+  background-size: cover
+  background-repeat: no-repeat
+
+.header__logo-text
+  vertical-align: middle
+  display: inline-block
+  margin-right: 47px
+  font-family: 'Montserrat-ExtraBold'
+  font-size: 22px
+  line-height: 27px
+  color: #212121
+
+.header__points-list a
+  font-family: 'Montserrat-Regular'
+  font-size: 14px
+  line-height: 17px
+  color: #212121
+
+.header__points-text-favorite
+  display: inline-block
+  margin-right: 9px
+
+.header__points-text-favorite:before
+  content: url("/images/full.svg")
+
+.header__points-text
+  display: inline-block
+  margin-right: 9px
+
+.header__points-text:before
+  content: url("/images/empty.svg")
+
+.header__points-num
+  display: inline-block
+
+.header__points-list-num
+  display: flex
+  justify-content: space-between
+  min-width: 80px
+  float: right
+  flex-direction: row-reverse
+
+.header__points-list-num.active-point
+  flex-direction: inherit
+
+.triangle
+  display: inline-block
+  position: absolute
+  min-width: 349px
+  height: 325px
+  padding: 30px 25px
+  top: 52px
+  right: -73px
+  border: 1px solid #CDD3DB
+  opacity: 0
+  visibility: hidden
+
+ul.menu > li:hover > div.triangle
+  opacity: 1
+  visibility: visible
+
+.triangle::before, .triangle::after
+  content: ''
+  position: absolute
+  right: 114px
+  z-index: 99999
+  top: -20px
+  border: 10px solid transparent
+  border-bottom: 10px solid #CDD3DB
+
+.triangle::after
+  border-bottom: 10px solid white
+  top: -19px
+  z-index: 99999
+
+.header__points-num
+  font-family: 'Montserrat-Regular'
+  color: #93979B
+  font-size: 14px
+  line-height: 17px
+  border-radius: 5px
+  border-color: #CDD3DB
+  height: 25px
+  text-align: center
+  width: 35px
+  padding-top: 4px
+  border-style: solid
+  border-width: 1px
+
+.header__points-num.active
+  background-color: #0066FF
+  color: #FFFFFF
+  border-color: #0066FF
+
+.header__points-list-projects
+  position: relative
+
+.header__points-list-projects:after
+  content: url("/images/Vector.svg")
+
+.header__points-list-projects:hover:after
+  display: inline-block
+  content: url("/images/Vector.svg")
+  transform: rotate(182deg)
+
+.submenu:hover
+  .header__points-list-projects:after
+    display: inline-block
+    content: url("/images/Vector.svg")
+    transform: rotate(182deg)
+
+.header__star
+  display: inline-block
+  vertical-align: middle
+  height: 24px
+  width: 25px
+  background-size: cover
+  background-image: url("/images/star.svg")
+
+.header__bell
+  display: inline-block
+  margin-left: 19px
+  margin-right: 42px
+  vertical-align: middle
+  height: 24px
+  width: 21px
+  background-size: cover
+  background-image: url("/images/bell.svg")
+
+.header__profile .header__profile-person
+  display: inline-block
+  vertical-align: middle
+
+.header__profile-photo
+  display: inline-block
+  background-image: url("/images/ava.png")
+  height: 40px
+  width: 40px
+  background-size: cover
+  border-radius: 50%
+
+.header__points-list .submenu li
+  padding: 11px 0px
+
+.submenu
+
+  &::-webkit-scrollbar
+    width: 4px
+
+  &::-webkit-scrollbar-track
+    background-color: #FFFFFF
+    -webkit-border-radius: 10px
+    border-radius: 10px
+
+  &::-webkit-scrollbar-thumb
+    -webkit-border-radius: 5px
+    background: #93979B
+    border-radius: 5px
+    height: 15px
+
+.header
+  ul
+    display: block
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &:after
+      display: block
+      content: ' '
+      clear: both
+      float: none
+
+    &.menu > li
+      float: left
+      position: relative
+
+      > a
+        //display: block
+        padding: 10px
+        text-decoration: none
+
+        &:hover
+
+    &.submenu__profile-person
+      position: absolute
+      min-width: 201px
+      height: 181px
+      padding: 14px 20px
+      top: 61px
+      right: -20px
+      background-color: white
+      border: 1px solid #CDD3DB
+      opacity: 0
+      visibility: hidden
+      transition-property: opacity, visibility
+      transition-duration: 0.2s
+      transition-delay: 0.15s
+
+      > li
+        display: block
+        margin-bottom: 7px
+
+        > a
+          //display: block
+          font-family: 'Montserrat-Regular'
+          font-size: 14px
+          line-height: 18px
+          color: #212121
+          opacity: 0.5
+          text-decoration: none
+
+          &:hover
+            text-decoration: underline
+
+  ul.menu > li:hover > ul.submenu__profile-person
+    width: max-content
+    opacity: 1
+    visibility: visible
+
+ul.menu > li:hover > ul.submenu__profile-person
+  opacity: 1
+  visibility: visible
+
+.submenu__profile-person::before, .submenu__profile-person::after
+  content: ''
+  position: absolute
+  right: 28px
+  z-index: 99999
+  top: -20px
+  border: 10px solid transparent
+  border-bottom: 10px solid #CDD3DB
+
+.submenu__profile-person::after
+  border-bottom: 10px solid white
+  top: -19px
+  z-index: 99999
+
+.header__points ul li:first-child
+  margin-right: 23px
+
+.header__points ul li:nth-child(2)
+  margin-right: 15px
+
+.header__points ul li:nth-child(3)
+  margin-right: 16px
+
+.header__points ul li:nth-child(4)
+  margin-right: 15px
+
+.header ul.submenu__profile-person li:nth-child(4):after
+  content: ""
+  display: block
+  margin-top: 11px
+  width: 100%
+  height: 1px
+  background-color: #CDD3DB
+
+.header__points .header__points-list ul.submenu li
+  margin-right: inherit
