@@ -2,7 +2,31 @@ extends /layout/app
 
 block content
   .container
-      include tasks/index
-
-
-
+      .content-tasks
+        .content-tasks__left-side
+            h1 Мои задачи
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            include tasks/index
+            a.content-tasks-more Загрузить еще
+        .content-tasks__right-side
+            include slicky/index
+      .content-navigation
+          .content-learning
+            .content-learning__left-side
+                include learning/index
+            .content-learning__right-side
+                include navigation/index
+          .content-video
+            h1(id='link-three') Видео-уроки
+            .content-video__wrapper
+                include videos/index
+          .content-review
+              include review/index

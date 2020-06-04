@@ -1,6 +1,6 @@
 .header
   min-height: 85px
-  padding-top: 31px
+  //padding-top: 31px
 
 .header__points-list
   display: inline-block
@@ -13,8 +13,13 @@
   display: inline-block
   position: absolute
   right: 100px
-  top: 24px
+  top: 28px
   vertical-align: middle
+  @media only screen and (max-width: 850px)
+    display: inline-block
+    position: relative
+    top: inherit
+    right: inherit
 
 .header
   ul
@@ -45,8 +50,9 @@
       min-width: 349px
       height: 325px
       padding: 18px 25px
-      top: 52px
+      top: 85px
       right: -73px
+      z-index: 9
       overflow-y: scroll
       background-color: white
       border: 1px solid #CDD3DB
@@ -86,6 +92,8 @@
   height: 30px
   background-size: cover
   background-repeat: no-repeat
+  @media only screen and (max-width: 1076px)
+    display: none
 
 .header__logo-text
   vertical-align: middle
@@ -95,6 +103,8 @@
   font-size: 22px
   line-height: 27px
   color: #212121
+  @media only screen and (max-width: 1076px)
+    display: none
 
 .header__points-list a
   font-family: 'Montserrat-Regular'
@@ -135,7 +145,7 @@
   min-width: 349px
   height: 325px
   padding: 30px 25px
-  top: 52px
+  top: 85px
   right: -73px
   border: 1px solid #CDD3DB
   opacity: 0
@@ -181,13 +191,33 @@ ul.menu > li:hover > div.triangle
 .header__points-list-projects
   position: relative
 
-.header__points-list-projects:after
+.header__profile-photo:after
+  display: inline-block
+  margin-left: 48px
   content: url("/images/Vector.svg")
 
-.header__points-list-projects:hover:after
+.header__profile-photo:hover:after
   display: inline-block
   content: url("/images/Vector.svg")
   transform: rotate(182deg)
+
+.header__points-list:first-child:after
+  content: url("/images/Vector.svg")
+
+.header__points-list:first-child:hover:after
+  display: inline-block
+  content: url("/images/Vector.svg")
+  transform: rotate(182deg)
+
+.header__profile-person li:hover
+  .header__profile-photo:after
+    display: inline-block
+    content: url("/images/Vector.svg")
+    transform: rotate(182deg)
+
+.header__profile-person li
+  padding-bottom: 23px
+  margin-top: -8px
 
 .submenu:hover
   .header__points-list-projects:after
@@ -197,7 +227,7 @@ ul.menu > li:hover > div.triangle
 
 .header__star
   display: inline-block
-  vertical-align: middle
+  vertical-align: top
   height: 24px
   width: 25px
   background-size: cover
@@ -207,11 +237,14 @@ ul.menu > li:hover > div.triangle
   display: inline-block
   margin-left: 19px
   margin-right: 42px
-  vertical-align: middle
+  vertical-align: top
   height: 24px
   width: 21px
   background-size: cover
   background-image: url("/images/bell.svg")
+  @media only screen and (max-width: 1198px)
+    margin-left: 6px
+    margin-right: 7px
 
 .header__profile .header__profile-person
   display: inline-block
@@ -273,7 +306,7 @@ ul.menu > li:hover > div.triangle
       min-width: 201px
       height: 181px
       padding: 14px 20px
-      top: 61px
+      top: 65px
       right: -20px
       background-color: white
       border: 1px solid #CDD3DB
@@ -324,15 +357,23 @@ ul.menu > li:hover > ul.submenu__profile-person
 
 .header__points ul li:first-child
   margin-right: 23px
+  @media only screen and (max-width: 1157px)
+    margin-right: 0
 
 .header__points ul li:nth-child(2)
   margin-right: 15px
+  @media only screen and (max-width: 1157px)
+    margin-right: 0
 
 .header__points ul li:nth-child(3)
   margin-right: 16px
+  @media only screen and (max-width: 1157px)
+    margin-right: 0
 
 .header__points ul li:nth-child(4)
   margin-right: 15px
+  @media only screen and (max-width: 1157px)
+    margin-right: 0
 
 .header ul.submenu__profile-person li:nth-child(4):after
   content: ""
@@ -344,3 +385,7 @@ ul.menu > li:hover > ul.submenu__profile-person
 
 .header__points .header__points-list ul.submenu li
   margin-right: inherit
+
+.header__points-list
+  padding: 31px 0
+

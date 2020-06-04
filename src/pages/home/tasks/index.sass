@@ -1,4 +1,4 @@
-.select2-container--default .select2-selection--single
+.select-wrapper .select2-container--default .select2-selection--single
   background-color: #D9F5E6
   border-radius: inherit
   border: none
@@ -7,7 +7,7 @@
   padding-left: 8px
   height: 33px
 
-.select2-container--default .select2-selection--single .select2-selection__rendered
+.select-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered
   color: #32C979
   font-family: 'Montserrat-Regular'
   font-style: normal
@@ -15,11 +15,11 @@
   font-size: 13px
   line-height: 16px
 
-.select2-container--default .select2-selection--single .select2-selection__arrow
+.select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow
   top: 3px
   right: 8px
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b
+.select-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b
   background-image: url('/images/arrow.png')
   background-color: transparent
   background-size: contain
@@ -30,3 +30,140 @@
   top: 11px !important
   left: auto !important
 
+.select-wrapper__text span
+  display: inline-block
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: bold
+  font-size: 15px
+  line-height: 18px
+  color: #212121
+
+.select-wrapper__text p
+  display: inline-block
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-size: 15px
+  line-height: 18px
+  color: #212121
+
+.select-wrapper
+  position: relative
+  padding-top: 20px
+  padding-left: 31px
+  padding-bottom: 25px
+
+.select-wrapper__info-data
+  display: block
+  position: absolute
+  top: 18px
+  right: 27px
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: #93979B
+  @media only screen and (max-width: 860px)
+    top: 7px
+  @media only screen and (max-width: 725px)
+    top: 127px
+  @media only screen and (max-width: 618px)
+    top: 27px
+
+.content-tasks-more
+  display: block
+  padding: 16px 350px
+  margin-top: 20px
+  width: 100%
+  height: 54px
+  border: 1px solid #CDD3DB
+  box-sizing: border-box
+  border-radius: 50px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: bold
+  font-size: 15px
+  line-height: 18px
+  text-align: center
+  color: #212121
+  @media only screen and (max-width: 860px)
+    padding: 16px 30px
+
+.content-tasks-more:hover
+  cursor: pointer
+
+.task-block
+  background-color: #fff
+  margin-bottom: 2px
+
+.select-wrapper__info-points
+  position: absolute
+  right: 28px
+  bottom: 31px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 13px
+  line-height: 16px
+  color: #B4B7BB
+  @media only screen and (max-width: 860px)
+    bottom: 8px
+  @media only screen and (max-width: 350px)
+    left: 31px
+    bottom: 7px
+    right: inherit
+.select-wrapper__text
+  padding-bottom: 12px
+
+.select-wrapper__info-comment:after
+  content: url("/images/comment.png")
+  margin-left: 11px
+  width: 17px
+  height: 15px
+
+.select-wrapper__info-comment:hover:after
+  cursor: pointer
+
+.select-wrapper__info-star:after
+  content: url("/images/startask.png")
+  display: inline-block
+  vertical-align: top
+  margin-left: 9px
+  width: 17px
+  height: 15px
+
+.select-wrapper__info-star:hover:after
+  cursor: pointer
+
+.select-wrapper__info-comment
+  margin-right: 21px
+
+.content-tasks__left-side
+  display: inline-block
+  max-width: 959px
+  margin-right: 80px
+  @media only screen and (max-width: 1347px)
+    margin-right: 25px
+  @media only screen and (max-width: 1347px)
+    margin-right: 0
+  @media only screen and (max-width: 1122px)
+    order: 2
+  @media only screen and (max-width: 900px)
+    max-width: 100%
+  @media only screen and (max-width: 860px)
+    margin: 0 auto
+    margin-top: 29px
+    display: block
+
+.content-tasks__right-side
+  width: auto
+  display: inline-block
+  vertical-align: top
+  @media only screen and (max-width: 1122px)
+    order: 1
+
+.people + .select2 .select2-selection--single
+  background-color: #F1F3F5!important
+
+.speed + .select2 .select2-selection--single
+  background-color: #F9E6D9!important

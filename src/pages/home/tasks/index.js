@@ -36,7 +36,7 @@ export default() => {
     $(".js-select2").select2({
       templateResult: formatState1,
       templateSelection: formatState,
-      width: '225px',
+      width: '210px',
       minimumResultsForSearch: -1
     });
 
